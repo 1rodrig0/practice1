@@ -2,10 +2,10 @@
 import Exercise from "@/components/Exercise";
 import Header from "@/components/Header";
 import Image from "next/image";
-import img1 from "@/public/vercel.svg"
+import img1 from "@/public/window.svg"
 import img2 from "@/public/window.svg"
-import img3 from "@/public/globe.svg"
-import img4 from "@/public/vercel.svg"
+import img3 from "@/public/window.svg"
+import img4 from "@/public/window.svg"
 
 export default function Home() {
   const titles =["puxada frontal","remada curbada","remada unilateral","levantamiento terra"]

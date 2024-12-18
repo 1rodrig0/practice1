@@ -1,25 +1,23 @@
-import React from 'react'
-import facha from "@/public/next.svg"
-import Image, { StaticImageData } from 'next/image';
+import React from "react";
+import facha from "@/public/window.svg";
+import Image, { StaticImageData } from "next/image";
 import "./Exercise.css";
 
-interface ExerciseProps{
+interface ExerciseProps {
   titulo: string;
   imagen: StaticImageData;
 }
-const Exercise: React.FC<ExerciseProps> = ({titulo,imagen}) => {
+const Exercise: React.FC<ExerciseProps> = ({ titulo, imagen }) => {
   return (
-    <div>
-      <Image src={imagen} alt={titulo}/>
-      <div>
-      <h2>{titulo}</h2>
-      <span>3 series x 12 repeticiones</span>
+    <div className="card">
+      <Image src={imagen} alt={titulo} />
+      <div className="text">
+        <h2>{titulo}</h2>
+        <span>3 series x 12 repeticiones</span>
       </div>
-      <img src={facha} alt="" />
-      
-      
+      <img src={facha.src} alt="" />
     </div>
-  )
-}
+  );
+};
 
-export default Exercise
+export default Exercise;
